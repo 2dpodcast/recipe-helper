@@ -23,6 +23,4 @@
 * Create partnerships for food/supermarket-based rewards using points
 
 
-* Add readme, license (MIT)
-* Publish to public git repository
 * Submit to Devpost
