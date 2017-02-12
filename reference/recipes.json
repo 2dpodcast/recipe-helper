@@ -358,8 +358,59 @@
       "Butter the bottom side of your first slice of bread, and put your slices of cheese on top",
       "Butter the top side of your second slice of bread, and put it on top of the cheese",
       "Put the sandwich in a pan on your stove, with the heat set to medium",
-      "Cook until bread is golden-brown, then flip it and repeat",
+      "Cook until the bread is golden-brown, then flip it and repeat",
       "Make sure the cheese is melted, and remove your newly grilled cheese"
+    ]
+  },
+  {
+    "name":"killer oven-baked french toast",
+    "ingredients":[
+      {
+        "name":"eggs",
+        "measure":"",
+        "quantity":2
+      },
+      {
+        "name":"milk",
+        "measure":"cups",
+        "quantity":0.5
+      },
+      {
+        "name":"vanilla extract",
+        "measure":"little bit, not too much",
+        "quantity":1
+      },
+      {
+        "name":"salt",
+        "measure":"little bit",
+        "quantity":1
+      },
+      {
+        "name":"cinnamon",
+        "measure":"little bit",
+        "quantity":1
+      },
+      {
+        "name":"bread",
+        "measure":"loaf",
+        "quantity":1
+      }
+    ],
+    "steps":[
+      "Preheat the oven to four hundred degrees fahrenheit",
+      "Break the eggs. Kind of hold them in your hand for a bit",
+      "Add milk. You can substitute soy milk if you don't have real milk",
+      "Add vanilla extract. You can substitute maple syrup if you don't have any",
+      "Add salt and the magic ingredient, cinnamon, for that sweet taste",
+      "Add other stuff in there as you get better at it",
+      "Beat it real hard. As hard as you can. A lot of people go wrong because they're not beating it hard enough",
+      "Slice your bread into manageable slices",
+      "Make sure all of your bread is completely submerged in your batter that you made, so that it absorbs it quite well",
+      "Evenly place bread on cookie tray, with enough space for it to breathe while it's cooking",
+      "Put it in the oven",
+      "Use a toaster oven if your actual oven isn't working. You may have to squeeze the bread a bit to fit them all on there",
+      "Wait about twenty minutes for the most delicious french toast that you can imagine",
+      "Take the bread out of the oven and enjoy"
     ]
   }
 ]
