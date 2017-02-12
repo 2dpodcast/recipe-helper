@@ -604,7 +604,7 @@ var recipes = [
       },
       {
         "name":"chicken breasts",
-        "altNames":"chicken breat",
+        "altNames":"chicken breast",
         "measure":"",
         "quantity":2
       },
