@@ -21,6 +21,3 @@
 * Add game elements - more points for more complicated recipes
 * Add learning progression - suggested recipes increase in difficulty
 * Create partnerships for food/supermarket-based rewards using points
-
-
-* Submit to Devpost
