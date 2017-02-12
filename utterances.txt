@@ -1,0 +1,56 @@
+WhatAreMyIngredientsIntent what're my ingredients
+WhatAreMyIngredientsIntent what are my ingredients
+WhatAreMyIngredientsIntent what ingredients do i have
+WhatAreMyIngredientsIntent which're my ingredients
+WhatAreMyIngredientsIntent which are my ingredients
+WhatAreMyIngredientsIntent which ingredients do i have
+WhatAreMyIngredientsIntent what is my ingredient
+WhatAreMyIngredientsIntent which is my ingredient
+WhatAreMyIngredientsIntent what ingredient do i have
+WhatAreMyIngredientsIntent which ingredient do i have
+WhatAreMyIngredientsIntent my ingredients
+WhatAreMyIngredientsIntent my ingredient
+WhatAreMyIngredientsIntent my current ingredients
+WhatAreMyIngredientsIntent my current ingredient
+WhatAreMyIngredientsIntent get my ingredients
+WhatAreMyIngredientsIntent get my ingredient
+WhatAreMyIngredientsIntent get my current ingredients
+WhatAreMyIngredientsIntent get my current ingredient
+WhatAreMyIngredientsIntent give me my ingredients
+WhatAreMyIngredientsIntent give me my ingredient
+WhatAreMyIngredientsIntent give me my current ingredients
+WhatAreMyIngredientsIntent give me my current ingredient
+WhatAreMyIngredientsIntent what my ingredients are
+WhatAreMyIngredientsIntent what my ingredient is
+WhatAreMyIngredientsIntent what my ingredients be
+WhatAreMyIngredientsIntent what my ingredient be
+MyIngredientsAreIntent i have {Ingredient}
+MyIngredientsAreNotIntent i don't have {Ingredient}
+MyIngredientsAreNotIntent i do not have {Ingredient}
+FindRecipeIntent that's it
+FindRecipeIntent that is it
+FindRecipeIntent no more
+FindRecipeIntent i don't have any more
+FindRecipeIntent i do not have any more
+FindRecipeIntent none
+FindRecipeIntent nothing
+FindRecipeIntent done
+FindRecipeIntent i'm done
+FindRecipeIntent i am done
+FindRecipeIntent find recipe
+FindRecipeIntent find a recipe
+FindRecipeIntent find me a recipe
+FindRecipeIntent find me recipe
+FindRecipeIntent find
+FindRecipeIntent recipe
+FindRecipeIntent search
+StartRecipeIntent go
+StartRecipeIntent let's go
+StartRecipeIntent let us go
+StartRecipeIntent lettuce go
+ContinueRecipeIntent continue
+ContinueRecipeIntent carry on
+ContinueRecipeIntent next
+ContinueRecipeIntent keep going
+ContinueRecipeIntent keep moving
+ContinueRecipeIntent got it

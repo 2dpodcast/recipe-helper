@@ -1,0 +1,37 @@
+{
+  "intents": [
+    {
+      "intent": "MyIngredientsAreIntent",
+      "slots": [
+        {
+          "name": "Ingredient",
+          "type": "AMAZON.Food"
+        }
+      ]
+    },
+    {
+      "intent": "MyIngredientsAreNotIntent",
+      "slots": [
+        {
+          "name": "Ingredient",
+          "type": "AMAZON.Food"
+        }
+      ]
+    },
+    {
+      "intent": "WhatAreMyIngredientsIntent"
+    },
+    {
+      "intent": "FindRecipeIntent"
+    },
+    {
+      "intent": "StartRecipeIntent"
+    },
+    {
+      "intent": "ContinueRecipeIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}
