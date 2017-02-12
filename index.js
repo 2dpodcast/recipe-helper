@@ -123,7 +123,7 @@ function removeIngredientsFromSession(intent, session, callback) {
 
   let ingredients = getIngredientsAttribute(sessionAttributes);
   if (ingredients.length > 0) {
-    ingredients = ingredients.splice(0, -1).join('::');
+    ingredients = ingredients.slice(0, -1).join('::');
     speechOutput = 'I removed the last ingredient';
     sessionAttributes.ingredients = ingredients;
   } else {
@@ -430,6 +430,306 @@ exports.handler = (event, context, callback) => {
 
 var recipes = [
   {
+    "name":"bacon cheeseburgers",
+    "ingredients":[
+      {
+        "name":"onion",
+        "measure":"tablespoons",
+        "quantity":2
+      },
+      {
+        "name":"ketchup",
+        "measure":"tablespoons",
+        "quantity":2
+      },
+      {
+        "name":"garlic",
+        "measure":"clove",
+        "quantity":1
+      },
+      {
+        "name":"sugar",
+        "measure":"teaspoon",
+        "quantity":1
+      },
+      {
+        "name":"worcestershire sauce",
+        "measure":"teaspoon",
+        "quantity":1
+      },
+      {
+        "name":"steak sauce",
+        "measure":"teaspoon",
+        "quantity":1
+      },
+      {
+        "name":"cider vinegar",
+        "measure":"teaspoons",
+        "quantity":0.25
+      },
+      {
+        "name":"ground beef",
+        "measure":"pound",
+        "quantity":1
+      },
+      {
+        "name":"sharp cheddar cheese",
+        "measure":"slices",
+        "quantity":4
+      },
+      {
+        "name":"hamburger buns",
+        "measure":"",
+        "quantity":4
+      },
+      {
+        "name":"bacon",
+        "measure":"strips",
+        "quantity":8
+      }
+    ],
+    "steps":[
+      "chop the onions and mince the garlic",
+      "in a large bowl, combine the first seven ingredients",
+      "crumble beef over mixture and mix well",
+      "shape into four patties",
+      "grill burgers, covered, over medium heat or broil 3 inches from the heat for 4-7 minutes on each side or until a thermometer reads 160 degrees and juices run clear",
+      "top with cheese",
+      "grill 1 minute longer or until cheese is melted",
+      "serve on buns with bacon and toppings of your choice"
+    ]
+  },
+  {
+    "name":"chicken lo mein",
+    "ingredients":[
+      {
+        "name":"lo mein noodles",
+        "measure":"ounces",
+        "quantity":8
+      },
+      {
+        "name":"chicken bouillon cubes",
+        "measure":"",
+        "quantity":3
+      },
+      {
+        "name":"chicken breasts",
+        "measure":"",
+        "quantity":2
+      },
+      {
+        "name":"olive oil",
+        "measure":"tablespoons",
+        "quantity":2
+      },
+      {
+        "name":"sesame oil",
+        "measure":"tablespoons",
+        "quantity":2
+      },
+      {
+        "name":"onion",
+        "measure":"",
+        "quantity":1
+      },
+      {
+        "name":"garlic",
+        "measure":"clove",
+        "quantity":1
+      },
+      {
+        "name":"celery",
+        "measure":"rib",
+        "quantity":1
+      },
+      {
+        "name":"cabbage",
+        "measure":"cups",
+        "quantity":2
+      },
+      {
+        "name":"bok choy",
+        "measure":"stalks",
+        "quantity":2
+      },
+      {
+        "name":"carrot",
+        "measure":"",
+        "quantity":1
+      },
+      {
+        "name":"green pea",
+        "measure":"cups",
+        "quantity":0.25
+      },
+      {
+        "name":"cornstarch",
+        "measure":"tablespoon",
+        "quantity":1
+      },
+      {
+        "name":"light soy sauce",
+        "measure":"cups",
+        "quantity":0.25
+      }
+    ],
+    "steps":[
+      "chop the onion, mince the garlic, thinly slice the celery, thinly slice the cabbage, slice the bok choy, shred the carrot",
+      "boil lo mein noodles in water adding bouillon cubes until al dente",
+      "drain well reserving liquid",
+      "cut chicken breasts into small shredded pieces",
+      "sprinkle with salt to taste",
+      "in a large skillet or wok heat olive oil and saute chicken until done",
+      "remove, set aside",
+      "add 2 tablespoons sesame oil to skillet or wok and saute onion, garlic, celery, cabbage, bok choy, carrot and peas until crispy tender (approximately 5 minutes) adding more olive oil if needed",
+      "dissolve cornstarch in cold water",
+      "add cornstarch liquid and one-half of reserved broth",
+      "stir in lo mein noodles and chicken",
+      "add remaining broth liquid",
+      "add soy sauce and toss",
+      "on low heat cook just until noodles are nice and darken"
+    ]
+  },
+  {
+    "name":"chocolate chip cookies",
+    "ingredients":[
+      {
+        "name":"butter",
+        "measure":"cup",
+        "quantity":1
+      },
+      {
+        "name":"sugar",
+        "measure":"cup",
+        "quantity":1
+      },
+      {
+        "name":"brown sugar",
+        "measure":"cup",
+        "quantity":1
+      },
+      {
+        "name":"eggs",
+        "measure":"",
+        "quantity":2
+      },
+      {
+        "name":"vanilla extract",
+        "measure":"teaspoons",
+        "quantity":2
+      },
+      {
+        "name":"flour",
+        "measure":"cups",
+        "quantity":3
+      },
+      {
+        "name":"baking soda",
+        "measure":"teaspoon",
+        "quantity":1
+      },
+      {
+        "name":"salt",
+        "measure":"teaspoons",
+        "quantity":0.5
+      },
+      {
+        "name":"chocolate chips",
+        "measure":"cups",
+        "quantity":2
+      },
+      {
+        "name":"walnuts",
+        "measure":"cup",
+        "quantity":1
+      }
+    ],
+    "steps":[
+      "preheat oven to 350 degrees F",
+      "soften the butter",
+      "chop the walnuts",
+      "cream together the butter, white sugar, and brown sugar until smooth",
+      "beat in the eggs one at a time, then stir in the vanilla",
+      "dissolve baking soda in hot water",
+      "add to batter along with salt",
+      "stir in flour, chocolate chips, and nuts",
+      "drop by large spoonfuls onto ungreased pans",
+      "bake for about 10 minutes in the preheated oven, or until edges are nicely browned"
+    ]
+  },
+  {
+    "name":"apple pie",
+    "ingredients":[
+      {
+        "name":"sugar",
+        "measure":"cups",
+        "quantity":0.5
+      },
+      {
+        "name":"flour",
+        "measure":"cups",
+        "quantity":0.25
+      },
+      {
+        "name":"cinnamon",
+        "measure":"teaspoons",
+        "quantity":0.5
+      },
+      {
+        "name":"nutmeg",
+        "measure":"teaspoons",
+        "quantity":0.5
+      },
+      {
+        "name":"salt",
+        "measure":"teaspoons",
+        "quantity":0.125
+      },
+      {
+        "name":"apples",
+        "measure":"",
+        "quantity":8
+      },
+      {
+        "name":"butter",
+        "measure":"tablespoons",
+        "quantity":2
+      },
+      {
+        "name":"pie crust",
+        "measure":"",
+        "quantity":1
+      }
+    ],
+    "steps":[
+      "heat oven to 425 degrees F, then prepare pie crust",
+      "mix sugar, flour, cinnamon, nutmeg and salt in large bowl",
+      "stir in apples, then line pie plate with crust",
+      "dot with butter, and trim overhanging edge of crust one half inch from rim of plate",
+      "roll other round of crust, then fold into fourths and cut slits so steam can escape",
+      "unfold top crust over filling, and trim overhanging edge 1 inch from rim of plate",
+      "fold and roll top edge under lower edge, while pressing on rim to seal",
+      "flute as desired, then cover edge with 3 inch strip of aluminum foil to prevent excessive browning",
+      "remove foil during last 15 minutes of baking"
+    ]
+  },
+  {
+    "name":"boiled water",
+    "ingredients":[
+      {
+        "name":"water",
+        "measure":"cups",
+        "quantity":3
+      }
+    ],
+    "steps":[
+      "put water in pot",
+      "put pot on stove",
+      "turn stove on high",
+      "wait for water to bubble"
+    ]
+  },
+  {
     "name":"boiled water",
     "ingredients":[
       {
@@ -443,6 +743,53 @@ var recipes = [
       "put the pot on your stove",
       "adjust your stove burner to the highest heat setting",
       "wait for the water in the pot to start bubbling"
+    ]
+  },
+  {
+    "name":"coke and rum",
+    "ingredients":[
+      {
+        "name":"coke",
+        "measure":"cups",
+        "quantity":4
+      },
+      {
+        "name":"rum",
+        "measure":"cup",
+        "quantity":1
+      }
+    ],
+    "steps":[
+      "pour your rum into a pitcher",
+      "pour your coke into the same pitcher",
+      "profit"
+    ]
+  },
+  {
+    "name":"grilled cheese",
+    "ingredients":[
+      {
+        "name":"bread",
+        "measure":"pieces",
+        "quantity":2
+      },
+      {
+        "name":"cheese",
+        "measure":"slices",
+        "quantity":2
+      },
+      {
+        "name":"butter",
+        "measure":"slices",
+        "quantity":2
+      }
+    ],
+    "steps":[
+      "Butter the bottom side of your first slice of bread, and put your slices of cheese on top",
+      "Butter the top side of your second slice of bread, and put it on top of the cheese",
+      "Put the sandwich in a pan on your stove, with it set to medium",
+      "Cook until bread is golden-brown, then flip it and repeat",
+      "Make sure the cheese is melted, and remove your newly grilled cheese"
     ]
   }
 ];

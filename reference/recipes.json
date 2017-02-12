@@ -314,5 +314,52 @@
       "adjust your stove burner to the highest heat setting",
       "wait for the water in the pot to start bubbling"
     ]
+  },
+  {
+    "name":"coke and rum",
+    "ingredients":[
+      {
+        "name":"coke",
+        "measure":"cups",
+        "quantity":4
+      },
+      {
+        "name":"rum",
+        "measure":"cup",
+        "quantity":1
+      }
+    ],
+    "steps":[
+      "pour your rum into a pitcher",
+      "pour your coke into the same pitcher",
+      "profit"
+    ]
+  },
+  {
+    "name":"grilled cheese",
+    "ingredients":[
+      {
+        "name":"bread",
+        "measure":"pieces",
+        "quantity":2
+      },
+      {
+        "name":"cheese",
+        "measure":"slices",
+        "quantity":2
+      },
+      {
+        "name":"butter",
+        "measure":"slices",
+        "quantity":2
+      }
+    ],
+    "steps":[
+      "Butter the bottom side of your first slice of bread, and put your slices of cheese on top",
+      "Butter the top side of your second slice of bread, and put it on top of the cheese",
+      "Put the sandwich in a pan on your stove, with the heat set to medium",
+      "Cook until bread is golden-brown, then flip it and repeat",
+      "Make sure the cheese is melted, and remove your newly grilled cheese"
+    ]
   }
 ]
