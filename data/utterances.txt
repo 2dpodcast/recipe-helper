@@ -61,6 +61,7 @@ StartRecipeIntent go
 StartRecipeIntent let's go
 StartRecipeIntent let us go
 StartRecipeIntent lettuce go
+StartRecipeIntent you bet
 ContinueRecipeIntent continue
 ContinueRecipeIntent carry on
 ContinueRecipeIntent next
