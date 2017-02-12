@@ -25,10 +25,23 @@ WhatAreMyIngredientsIntent what my ingredient is
 WhatAreMyIngredientsIntent what my ingredients be
 WhatAreMyIngredientsIntent what my ingredient be
 MyIngredientsAreIntent i have {Ingredient}
-MyIngredientsAreNotIntent i don't have {Ingredient}
-MyIngredientsAreNotIntent i do not have {Ingredient}
+MyIngredientsAreNotIntent i don't have that
+MyIngredientsAreNotIntent i do not have that
+MyIngredientsAreNotIntent that's not what i said
+MyIngredientsAreNotIntent that is not what i said
+MyIngredientsAreNotIntent that's wrong
+MyIngredientsAreNotIntent that is wrong
+MyIngredientsAreNotIntent you're wrong
+MyIngredientsAreNotIntent you are wrong
+MyIngredientsAreNotIntent wrong
+MyIngredientsAreNotIntent nope
+MyIngredientsAreNotIntent not that
+MyIngredientsAreNotIntent no
+MyIngredientsAreNotIntent listen closer
 FindRecipeIntent that's it
 FindRecipeIntent that is it
+FindRecipeIntent that's all
+FindRecipeIntent that is all
 FindRecipeIntent no more
 FindRecipeIntent i don't have any more
 FindRecipeIntent i do not have any more

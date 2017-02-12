@@ -31,6 +31,9 @@
       "intent": "ContinueRecipeIntent"
     },
     {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
       "intent": "AMAZON.StopIntent"
     }
   ]
