@@ -61,9 +61,9 @@ function getWelcomeResponse(callback) {
   const cardTitle = 'Hello';
   const speechOutput = 'Hello. And welcome to Recipe Helper. Tell me the ' +
     'first ingredient you have, by saying something like, I have milk. List ' +
-    'your ingredients by asking, what ingredients do I have? Find a recipe ' +
-    "by saying, that's it. Have me repeat my last response by saying, " +
-    'repeat that';
+    'your ingredients by asking, what ingredients do I have? Remove the ' +
+    "last ingredient by saying, I don't have that. Find a recipe by saying, " +
+    "that's it. Have me repeat my last response by saying, repeat that";
   const repromptText = 'Tell me the first ingredient you have by saying ' +
     'something like, I have milk';
   const shouldEndSession = false;
@@ -106,6 +106,28 @@ function setIngredientsInSession(intent, session, callback) {
     speechOutput = "I don't know the first ingredient you have. Try telling " +
       'me again?';
     repromptText = "I don't know the first ingredient you have. Tell me by " +
+      'saying something like, I have milk';
+  }
+
+  speak(sessionAttributes, cardTitle, speechOutput, repromptText,
+    shouldEndSession, callback);
+}
+
+// Remove provided ingredient from ingredients attribute
+function removeIngredientsFromSession(intent, session, callback) {
+  let sessionAttributes = session.attributes;
+  const cardTitle = 'Removing ingredient';
+  let speechOutput = '';
+  const repromptText = null;
+  const shouldEndSession = false;
+
+  let ingredients = getIngredientsAttribute(sessionAttributes);
+  if (ingredients.length > 0) {
+    ingredients = ingredients.splice(0, -1).join('::');
+    speechOutput = 'I removed the last ingredient';
+    sessionAttributes.ingredients = ingredients;
+  } else {
+    speechOutput = "I don't know the first ingredient you have. Tell me by " +
       'saying something like, I have milk';
   }
 
@@ -354,6 +376,8 @@ function onIntent(intentRequest, session, callback) {
     setIngredientsInSession(intent, session, callback);
   } else if (intentName === 'WhatAreMyIngredientsIntent') {
     getIngredientsFromSession(intent, session, callback);
+  } else if (intentName === 'MyIngredientsAreNotIntent') {
+    removeIngredientsFromSession(intent, session, callback);
   } else if (intentName === 'FindRecipeIntent') {
     findRecipe(intent, session, callback);
   } else if (intentName === 'StartRecipeIntent') {
@@ -416,7 +440,7 @@ var recipes = [
     ],
     "steps":[
       "pour your water into a moderately-sized pot",
-      "put the put on your stove",
+      "put the pot on your stove",
       "adjust your stove burner to the highest heat setting",
       "wait for the water in the pot to start bubbling"
     ]

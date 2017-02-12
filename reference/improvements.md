@@ -2,7 +2,7 @@
 * Can possibly save sessions on remote server for easy resuming
 
 
-* Add ability to: remove ingredients (for misidentifications), deny recipe (find different one)
+* Add ability to: deny recipe (find different one)
 
 
 * Add fuzzy search to match partial ingredients list
