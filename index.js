@@ -76,8 +76,8 @@ function getWelcomeResponse(callback) {
 function handleSessionEndRequest(callback) {
   const sessionAttributes = {};
   const cardTitle = 'Goodbye';
-  const speechOutput = 'Thanks for using Recipe Helper. Please to come ' +
-    'again soon';
+  const speechOutput = 'Thanks for using Recipe Helper. Please come again ' +
+    'soon';
   const repromptText = null;
   const shouldEndSession = true;
 
@@ -256,10 +256,20 @@ function matchRecipe(ingredients) {
       for (const requiredIngredient of requiredIngredients) {
         let foundMatch = false;
         for (const ingredient of ingredients) {
-          if (!foundMatch && requiredIngredient.name.toLowerCase().
-              indexOf(ingredient.toLowerCase()) > -1) {
-            foundIngredientsCount++;
-            foundMatch = true;
+          if (!foundMatch) {
+            let names = requiredIngredient.altNames;
+            if (names) {
+              names = names.split('::');
+            } else {
+              names = [];
+            }
+            names.push(requiredIngredient.name);
+            for (const name of names) {
+              if (name.toLowerCase() === ingredient.toLowerCase()) {
+                foundIngredientsCount++;
+                foundMatch = true;
+              }
+            }
           }
         }
       }
@@ -460,6 +470,7 @@ var recipes = [
       },
       {
         "name":"apples",
+        "altNames":"apple",
         "measure":"",
         "quantity":8
       },
@@ -492,6 +503,7 @@ var recipes = [
     "ingredients":[
       {
         "name":"onions",
+        "altNames":"onion",
         "measure":"tablespoons",
         "quantity":2
       },
@@ -502,6 +514,7 @@ var recipes = [
       },
       {
         "name":"garlic",
+        "altNames":"garlic clove::garlic cloves",
         "measure":"clove",
         "quantity":1
       },
@@ -537,11 +550,13 @@ var recipes = [
       },
       {
         "name":"hamburger buns",
+        "altNames":"humburger bun::bun",
         "measure":"",
         "quantity":4
       },
       {
         "name":"bacon",
+        "altNames":"bacon strip::bacon strips",
         "measure":"strips",
         "quantity":8
       }
@@ -578,6 +593,7 @@ var recipes = [
     "ingredients":[
       {
         "name":"lo mein noodles",
+        "altNames":"lo mein",
         "measure":"ounces",
         "quantity":8
       },
@@ -588,6 +604,7 @@ var recipes = [
       },
       {
         "name":"chicken breasts",
+        "altNames":"chicken breat",
         "measure":"",
         "quantity":2
       },
@@ -602,12 +619,14 @@ var recipes = [
         "quantity":2
       },
       {
-        "name":"onions",
+        "name":"onion",
+        "altNames":"onions",
         "measure":"",
         "quantity":1
       },
       {
         "name":"garlic",
+        "altNames":"garlic clove::garlic cloves",
         "measure":"clove",
         "quantity":1
       },
@@ -618,6 +637,7 @@ var recipes = [
       },
       {
         "name":"cabbages",
+        "altNames":"cabbage",
         "measure":"cups",
         "quantity":2
       },
@@ -627,22 +647,26 @@ var recipes = [
         "quantity":2
       },
       {
-        "name":"carrots",
+        "name":"carrot",
+        "altNames":"carrots",
         "measure":"",
         "quantity":1
       },
       {
         "name":"green peas",
+        "altNames":"green pea::pea::peas",
         "measure":"cups",
         "quantity":0.25
       },
       {
-        "name":"cornstarch",
+        "name":"corn starch",
+        "altNames":"cornstarch",
         "measure":"tablespoon",
         "quantity":1
       },
       {
         "name":"light soy sauce",
+        "altNames":"soy sauce",
         "measure":"cups",
         "quantity":0.25
       }
@@ -684,6 +708,7 @@ var recipes = [
       },
       {
         "name":"eggs",
+        "altNames":"egg",
         "measure":"",
         "quantity":2
       },
@@ -709,11 +734,13 @@ var recipes = [
       },
       {
         "name":"chocolate chips",
+        "altNames":"chocolate chip",
         "measure":"cups",
         "quantity":2
       },
       {
         "name":"walnuts",
+        "altNames":"walnut",
         "measure":"cup",
         "quantity":1
       }
@@ -761,6 +788,7 @@ var recipes = [
     "ingredients":[
       {
         "name":"eggs",
+        "altNames":"egg",
         "measure":"",
         "quantity":2
       },
@@ -817,6 +845,7 @@ var recipes = [
       },
       {
         "name":"coke",
+        "altNames":"cola::coca-cola",
         "measure":"cups",
         "quantity":4
       }

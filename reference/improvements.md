@@ -2,7 +2,7 @@
 * Can possibly save sessions on remote server for easy resuming
 
 
-* Add ability to: deny recipe (find different one)
+* Add ability to: deny recipe (find different one), say multiple ingredients at once (doesn't work very well with speech recognition)
 
 
 * Add fuzzy search to match partial ingredients list
@@ -12,7 +12,6 @@
 
 * With more time and money: use web API to search recipes by ingredients
 * Improve JSON schema for easier sorting/searching
-* Add ingredient aliases (especially for plurals - allow full matches for ingredients)
 
 
 * Improve noun handling (no "eight of apples")
