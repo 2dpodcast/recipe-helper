@@ -395,6 +395,55 @@
     ]
   },
   {
+    "name":"pancakes",
+    "ingredients":[
+      {
+        "name":"flour",
+        "measure":"cup",
+        "quantity":1
+      },
+      {
+        "name":"sugar",
+        "measure":"tablespoons",
+        "quantity":2
+      },
+      {
+        "name":"baking powder",
+        "measure":"teaspoons",
+        "quantity":2
+      },
+      {
+        "name":"salt",
+        "measure":"teaspoon",
+        "quantity":1
+      },
+      {
+        "name":"egg",
+        "altNames":"eggs",
+        "measure":"",
+        "quantity":1
+      },
+      {
+        "name":"milk",
+        "measure":"cup",
+        "quantity":1
+      },
+      {
+        "name":"vegetable oil",
+        "measure":"tablespoons",
+        "quantity":2
+      }
+    ],
+    "steps":[
+      "Prepare the egg by beating it in a bowl",
+      "Mix your flour, sugar, baking powder, and salt into a large bowl",
+      "Make a well in the center of the mixture, then mix in the milk, egg, and oil, until smooth",
+      "Lightly oil a griddle or frying pan, then warm it at medium-high heat",
+      "For each pancake, pour the about a forth of a cup of the batter onto the heated surface",
+      "Cook until the bottom is brown, and flip it over to brown the other side"
+    ]
+  },
+  {
     "name":"rum and coke",
     "ingredients":[
       {
