@@ -20,3 +20,12 @@ add a learning progression, where recipes get more and more difficult as time go
 possibly team up with food providers for "rewards" based on points gained
 
 move code into functions
+
+add name aliases for ingredients - especially to handle plurals
+
+create README/LICENSE (MIT), structure files better (examples in own directory)
+make things less hacky
+
+push this to a public git repo
+
+submit this to devpost
