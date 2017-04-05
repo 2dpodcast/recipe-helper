@@ -1,16 +1,19 @@
-## About this project
+# Recipe Helper
 
-Recipe Helper was built at Rochester Institute of Technology during the
-24-hour hackathon BrickHack 3 by Jason Puglisi and Adam Duvin. The Echo
-hardware was rented out during the event for development and testing. Neither
-creator owns an Echo, so don't count on future updates/refinement. Feel free to
-fork this though or use it as a reference.
+Alexa skill to find cooking recipes using provided ingredients.
 
-See reference/improvements.md for things we think would be cool if this was a
-professional project.
+## Usage
 
-## How to use
+This skill is not hosted anywhere, but you can set it up in your own testing
+environment using the Alexa section of the Amazon Developer website.
 
-This skill isn't published anywhere but here. You can follow a simple Alexa
-development tutorial to set it up and use it yourself. Beware that it's very
-limited though.
+## Overview
+
+Takes a list of ingredients and matches them to a static list of recipes.
+Current functionality is very limited in many ways. See
+[`reference/improvements.md`](reference/improvements.md) for some possible
+improvements that could be made.
+
+Created by Jason Puglisi and Adam Duvin during the 24-hour hackathon BrickHack
+3 at Rochester Institute of Technology. Project is no longer in development,
+but pull requests or derivations are welcome.
